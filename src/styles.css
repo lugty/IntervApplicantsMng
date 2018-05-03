@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body, html{
+  height: 100%;
+}
+
+body{
+  font-family:Source Sans Pro,sans-serif;
+  color:#656565;
+  font-size:.875rem;
+}
+
+#wrapper{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#wrapper .header-wrapper{
+  z-index: 1050;
+  position: relative;
+}
+
+/** aside container **/
+#wrapper .aside-container{
+  width: 220px;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+
+  background-color: #fff;
+  border-right: 1px solid rgba(0,0,0,.15);
+}
+
+#wrapper .aside-container-inner{
+  padding-top: 65px;
+}
+
+#wrapper .main-section{
+  margin-left: 220px;
+
+  height: 100%;
+  position: relative;
+}
+
+
+/** sidebar nav **/
+.sidebar-nav{
+  position: relative;
+  font-size: 14px;
+  list-style: none;
+
+  padding-left: 0px;
+}
+
+.sidebar-nav >  li{
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav > li > a{
+  padding: 12px 24px;
+  color: #515253;
+  letter-spacing: .025em;
+  font-weight: 400;
+  display: block;
+  position: relative;
+}
+
+/** main section **/
+
+.main-section{
+  position: relative;
+  height: 100%;
+  background-color: #f5f7fa;
+}
+
+.content-wrapper{
+  padding: 20px;
+}
