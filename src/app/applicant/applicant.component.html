@@ -9,11 +9,4 @@
   </li>
 </ul>
 
-<div class="card" *ngIf="selectedApplicant">
-  <div class="card-body">
-    <h1>{{ selectedApplicant.name | uppercase }}</h1>
-    <div class="form-group">
-      <input type="text" placeholder="Name" [(ngModel)]="selectedApplicant.name" class="form-control" />
-    </div>
-  </div>
-</div>
+<app-applicant-detail [applicant]="selectedApplicant"></app-applicant-detail>
