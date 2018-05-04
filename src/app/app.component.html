@@ -11,7 +11,7 @@
     <div class="aside-container-inner">
       <ul class="sidebar-nav">
         <li>
-          <a href="#">Home</a>
+          <a routerLink="/applicants">Applicants</a>
         </li>
       </ul>
     </div>
@@ -19,7 +19,7 @@
 
   <section class="main-section">
     <div class="content-wrapper">
-      <app-applicant></app-applicant>
+      <router-outlet></router-outlet>
       <app-messages></app-messages>
     </div>
   </section>
